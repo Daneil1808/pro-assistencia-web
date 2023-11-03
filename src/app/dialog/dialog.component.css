@@ -1,0 +1,39 @@
+mat-icon {
+  justify-content: center;
+}
+
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+mat-icon {
+  color: green;
+  font-size: xx-large;
+  display: inline;
+  margin-left: 80px;
+  font-size: 80px;
+}
+
+button {
+  border: 1px solid #171559;
+  width: 200px;
+}
+
+button:hover{
+  background-color: #171559;
+  color: white;
+}
+
+span {
+  text-align: center;
+  font-weight: bold;
+  color: #171559;
+}

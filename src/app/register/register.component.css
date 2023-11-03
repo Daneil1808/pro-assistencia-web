@@ -1,0 +1,131 @@
+.content {
+  height: 100%;
+  justify-content: left;
+  align-items: left;
+  margin-left: 32px;
+  margin-top: 32px;
+  font-size: 2rem;
+  color: #171559;
+  font-weight: bold;
+  background-color: white;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.mat-card-text{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+mat-card {
+  height: auto;
+  width: 96%;
+  background-color: #f26363;
+  color: white;
+  margin-top: 16px;
+}
+
+.form-section{
+  font-size: 20px;
+  margin-top: 48px;
+  font-weight: 500;
+}
+
+.form-section-secondary{
+  font-size: 20px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+mat-form-field{
+  margin-top: 8px;
+  width: 96%;
+  color: #171559;
+  margin-bottom: 16px;
+}
+
+mat-error {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-container {
+  display: flex;
+  gap: 16px;
+}
+
+.double-field {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.right-text{
+  margin-left: 366px;
+}
+
+.right-text-cpf{
+  margin-left: 520px;
+}
+
+.right-text-adress{
+  margin-left: 492px;
+}
+
+.right-text-complement{
+  margin-left: 476px;
+}
+
+.right-text-email{
+  margin-left: 484px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 10px;
+  margin-top: 16px;
+}
+
+button {
+  border: 1px solid #171559;
+  width: 160px;
+}
+
+.button:hover{
+  background-color: #171559;
+  color: white;
+}
+
+.first-radio {
+  width: 350px;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-left: -8px;
+}
+
+.second-radio {
+  margin-left: auto;
+  margin-right: 360px;
+  margin-top: 16px;
+}
+
+.mat-radio-button{
+  color: #171559;
+  background-color: #171559;
+}
+
+.smaller-select{
+  width: 48%;
+}

@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+::ng-deep .mat-form-field-outline-start {
+  border-radius: 28px 0 0 28px !important;
+  min-width: 28px !important;
+}
+
+::ng-deep .mat-form-field-outline-end {
+  border-radius: 0 28px 28px 0 !important;
+  min-width: 28px !important;
+}
+
+/* Add padding to move the label and input into the center to prevent overlapping the rounded border */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-flex {
+  padding: 0 32px !important;
+}

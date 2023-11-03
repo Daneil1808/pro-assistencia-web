@@ -1,0 +1,42 @@
+<mat-sidenav-container>
+  <mat-sidenav mode= "side" opened class="mat-elevation-z8">
+    <img class="logo" src="assets/pro-assistencia.png">
+    <mat-divider></mat-divider>
+    <span>Viçosa</span>
+    <button mat-button class="menu-button">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+      <span>Coordenação</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span>Início</span>
+    </button>
+    <button mat-button class="menu-button" style="background-color: #f26363; color: white;">
+      <mat-icon>assessment</mat-icon>
+      <span>Cadastro</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>today</mat-icon>
+      <span>Agenda</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span>Perfil</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>assignment_turned_in</mat-icon>
+      <span>Relatórios</span>
+    </button>
+    <mat-divider class="profile"></mat-divider>
+    <div class="profile-info">
+      <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200"/>
+      <div class="info">
+        <h4 class="name">Felipe Domingues</h4>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-register></app-register>
+  </mat-sidenav-content>
+</mat-sidenav-container>

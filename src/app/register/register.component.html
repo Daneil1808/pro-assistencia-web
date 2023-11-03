@@ -1,0 +1,152 @@
+<div class="content">
+  <div>
+    <h1 class="title">Cadastro</h1>
+  </div>
+  <div>
+    <mat-card>
+      <mat-card-content class="mat-card-text">Identificação da pessoa</mat-card-content>
+    </mat-card>
+  </div>
+  <div class="form-section">
+    <span>Nome</span>
+    <div class="example-container">
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Digite o nome" [formControl]="name" required>
+        <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+    <span>Nome social</span>
+    <div class="example-container">
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Digite o nome social" [formControl]="name">
+        <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+    <span>Data de nascimento</span>
+    <span class="right-text">Sexo biológico</span>
+    <div class="form-container">
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput [matDatepicker]="picker" placeholder="Data de Nascimento">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="double-field" appearance="outline">
+        <mat-select>
+          <mat-option value="masculino">Masculino</mat-option>
+          <mat-option value="feminino">Feminino</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="form-section-secondary">
+      <span>Gênero</span>
+      <span class="right-text-cpf">A pessoa se considera do publico LGBTQIA+?</span>
+      <div class="form-container">
+        <div class="first-radio">
+          <mat-radio-group>
+            <mat-radio-button class="radio-margin">Mulher cisgênero</mat-radio-button>
+            <mat-radio-button class="radio-margin">Homem cisgênero</mat-radio-button>
+            <mat-radio-button class="radio-margin">Mulher transgênero</mat-radio-button>
+            <mat-radio-button class="radio-margin">Homem transgênero</mat-radio-button>
+            <mat-radio-button class="radio-margin">Travesti</mat-radio-button>
+            <mat-radio-button class="radio-margin">Não binário</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="second-radio">
+          <mat-radio-group>
+            <mat-radio-button class="radio-margin">Sim</mat-radio-button>
+            <mat-radio-button class="radio-margin">Não</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+    </div>
+    <div class="form-section-secondary smaller-select">
+      <span>Cor/raça</span>
+      <mat-form-field class="double-field" appearance="outline">
+        <mat-select>
+          <mat-option value="masculino">Branca</mat-option>
+          <mat-option value="feminino">Preta</mat-option>
+          <mat-option value="feminino">Parda</mat-option>
+          <mat-option value="feminino">Indígena</mat-option>
+          <mat-option value="feminino">Amarela</mat-option>
+          <mat-option value="feminino">Não declarada</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div>
+
+  <div>
+    <mat-card>
+      <mat-card-content class="mat-card-text">Documentos</mat-card-content>
+    </mat-card>
+  </div>
+  <div class="form-section">
+    <span>RG</span>
+    <span class="right-text-cpf">CPF</span>
+    <div class="form-container">
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput placeholder="00000000" [formControl]="rg" required>
+        <mat-error *ngIf="rg.invalid">{{getErrorMessageDocuments()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput placeholder="000.000.000-00" [formControl]="cpf" required>
+        <mat-error *ngIf="cpf.invalid">{{getErrorMessageDocuments()}}</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div>
+    <mat-card>
+      <mat-card-content class="mat-card-text">Local de residência</mat-card-content>
+    </mat-card>
+  </div>
+  <div class="form-section">
+    <span>Bairro</span>
+    <span class="right-text-adress">Endereço</span>
+    <div class="form-container">
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput placeholder="Digite o bairro" [formControl]="neighborhood" required>
+        <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput placeholder="Selecione o endereço" [formControl]="address" required>
+        <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="form-section">
+    <span>Número</span>
+    <span class="right-text-complement">Complemento</span>
+    <div class="form-container">
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput placeholder="Digite o número">
+        <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput placeholder="Ex: apartamento 22">
+      </mat-form-field>
+    </div>
+  </div>
+  <div>
+    <mat-card>
+      <mat-card-content class="mat-card-text">Informações do contato</mat-card-content>
+    </mat-card>
+  </div>
+  <div class="form-section">
+    <span>Celular</span>
+    <span class="right-text-email">E-mail</span>
+    <div class="form-container">
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput placeholder="(00)00000-0000" [formControl]="celular">
+      </mat-form-field>
+      <mat-form-field class="double-field" appearance="outline">
+        <input matInput placeholder="Digite o e-mail" [formControl]="email">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="button-container">
+    <div class="buttons">
+      <button mat-button class="button">Cancelar</button>
+      <button mat-button class="button" (click)="openDialog('300ms', '150ms')">Cadastrar</button>
+    </div>
+  </div>
+
+</div>
+
